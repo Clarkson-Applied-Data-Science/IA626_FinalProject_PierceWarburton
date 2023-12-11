@@ -30,15 +30,20 @@ In this repository are three python files: FinalProject_MainCode, Visualizations
 #### Final Project_MainCode.py
 This is the file in which the brunt of my work and process is stored. It begins by scrapping the Letterboxd Top 1000 list for names and links to each movies specific page on Letterboxd (a string that is happily enough stored with the name of the movie in the list). I then visit each of these pages to get further data about the movies such as their year of release, their length, and of course, their average rating. All of this data is stored in a dictionary with a very particular key used. Letterboxd stores all movie names in a very specific format that I found hard to achieve in default python. Rather than try to convert various names into this format (or hope unformatted names would match) I decided to simply piggyback on this format since Letterboxd provides the names themselves on almost every page.. So the keys for the dictionary of Letterboxd movies are the names of the movies in the Letterboxd format. To give you an example here a couple different names for a movie compared to the letter box format:
 
-```
-Unformatted Names:
+
+----- Unformatted Names:
+
 The Godfather: Part 2
+
 The GodFather: Part II
+
 TheGodFatherPartII
 
-Letterboxd Formating:
+
+-----Letterboxd Formating:
+
 the-godfather-part-ii
-```
+
 
 Overall formatting is obviously more consistent than no formating and since I couldn't easily extract names from Letterboxd's formatting but could place them into the formatting I used it as a universe way to write names. 
 
