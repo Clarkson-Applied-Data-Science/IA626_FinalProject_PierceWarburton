@@ -45,6 +45,8 @@ TheGodFatherPartII
 the-godfather-part-ii
 
 
+
+
 Overall formatting is obviously more consistent than no formating and since I couldn't easily extract names from Letterboxd's formatting but could place them into the formatting I used it as a universe way to write names. 
 
 Once the dictionary of Letterboxd's Top 1000 films were compiled I loaded into the csv of the IMDb data and combined the two. This was done by iterating through the movies in the IMDb database and testing whether they already existed in the Letterboxd list or not. After all since both lists were compiled by different users but based around the same thing it wasn't unrealistic to expect lots of overlap. In fact the two lists shared most of the same movies. In total only 138 movies from the IMDb list were not represented in the Letterboxd list. A little less than 90% overlap. For those 138 movies on the IMDb list but not on the Letterboxd list I searched for them on the Letterboxd site and scraped their data to add to the list. Thus each movie had the average user ratings from Letterboxd, IMDb users, and the IMDb Metascore (the average critic ratings), as well as a little bit of other data such as year and runtime and so forth. This compiled dictionary of 1138 movies was then saved to a json file under the name "CombinedTop1000Movies.json".
