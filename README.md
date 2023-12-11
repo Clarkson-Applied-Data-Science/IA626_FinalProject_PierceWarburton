@@ -14,13 +14,12 @@ This project leveraged two dataset both centered around film data. The first dat
 
 #### LetterboxdTop1000Movies.json
 The data here is stored in a json dictionary with the following structure. Note that the primary key is a particularly formatted version of the movie's name. 
-{'example-film-1:
-          normal_name: 'Example Film 1'
-          movie_page_link: '/film/example-film-1'
-          year: '2000'
-          letterboxd_rating: '4.43'
-          runtime: '124'
-          imdb
+{'example-film-1:                                                            Name in the Letterboxd Format
+          normal_name: 'Example Film 1'                                      Name as normally typed
+          movie_page_link: '/film/example-film-1'                            Link to the movie's specific page from https:/Letterboxd.com
+          year: '2000'                                                       Year of release for the movie
+          letterboxd_rating: '4.43'                                          Average user rating out of 5
+          runtime: '124'                                                     Movie runtime in minutes
 
 
 ## My Process
