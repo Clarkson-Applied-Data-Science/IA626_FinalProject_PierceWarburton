@@ -12,8 +12,15 @@ the top 1000 IMDB user rated movies onto Kaggle (including both average user rat
 ## The Data
 This project leveraged two dataset both centered around film data. The first data set was a personally compiled dataset that combined Letterboxd movie data with data scrapped from a Letterboxd list titled 'Letterboxd’s Top 1,000 Narrative Feature Films' made by user diego andaluz (https://letterboxd.com/thediegoandaluz/list/letterboxds-top-1000-narrative-feature-films). The other dataset was a csv file uploaded three years ago on Kaggle by user Omar Hany (https://www.kaggle.com/datasets/omarhanyy/imdb-top-1000/) which compiled the Top 1000 films as ranked by average IMDb user rating. 
 
-#### My Letterboxd Dataset
-The data here is stored in a dictionary with the following structure. Note that the primary key is a particularly formatted version of the movie's name. 
+#### LetterboxdTop1000Movies.json
+The data here is stored in a json dictionary with the following structure. Note that the primary key is a particularly formatted version of the movie's name. 
+{'example-film-1:
+          normal_name: 'Example Film 1'
+          movie_page_link: '/film/example-film-1'
+          year: '2000'
+          letterboxd_rating: '4.43'
+          runtime: '124'
+          imdb
 
 
 ## My Process
