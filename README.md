@@ -9,6 +9,13 @@ would be unfeasible to compare all the movies on Letterboxd and IMDb I settled w
 this number. IMDb has its API behind a paywall while Letterboxd is quite easy to access but doesn't compile its own rankings. However someone had uploaded a csv of data on 
 the top 1000 IMDB user rated movies onto Kaggle (including both average user ratings and average critic ratings) and a Letterboxd user had made a list on Letterboxd of its respective 1000 highest ranked movies. So all I had to do was combine the two by parsing the csv file and scrapping the Letterboxd list for data. The last thing to note is that the way I combined these two lists is by comparing all the IMDb movies to the Letterboxd rankings, not the other way around. This meant that if a movie was on the Letterboxd list but not the IMDb list than I didn't try to go track down the IMDb ranking. I made this decision because again, the IMDb website was much harder to scape because they wanted people to buy their API.
 
+## The Data
+This project leveraged two dataset both centered around film data. The first data set was a personally compiled dataset that combined Letterboxd movie data with data scrapped from a Letterboxd list titled 'Letterboxd’s Top 1,000 Narrative Feature Films' made by user diego andaluz (https://letterboxd.com/thediegoandaluz/list/letterboxds-top-1000-narrative-feature-films). The other dataset was a csv file uploaded three years ago on Kaggle by user Omar Hany (https://www.kaggle.com/datasets/omarhanyy/imdb-top-1000/) which compiled the Top 1000 films as ranked by average IMDb user rating. 
+
+#### My Letterboxd Dataset
+The data here is stored in a dictionary with the following structure. Note that the primary key is a particularly formatted version of the movie's name. 
+
+
 ## My Process
 In this repository are three python files: FinalProject_MainCode, Visualizations, and Letterboxd Functions. I will describe each in turn here. Note that only Visualizations.py requires any extra packages to be installed (pandas and matplotlib). This file only creates the images I will attach further below and is not necesary to run again except for validation of the images. 
 #### Final Project_MainCode.py
