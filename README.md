@@ -14,6 +14,8 @@ This project leveraged two dataset both centered around film data. The first dat
 
 #### LetterboxdTop1000Movies.json
 The data here is stored in a json dictionary with the following structure. Note that the primary key is a particularly formatted version of the movie's name. 
+
+
 example-film-1:                                                              Name in the Letterboxd Format
 ```                                                         
           normal_name: 'Example Film 1'                                      Name as normally typed
