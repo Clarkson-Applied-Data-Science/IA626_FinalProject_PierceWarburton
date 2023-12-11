@@ -49,3 +49,18 @@ This file contains all the functions used in the query of the Letterboxd website
 
 #### Visualizations.py
 Finally this file is where I did some analyzation of the combined dataset. Using the pandas library I converted the data from dictionary to DataFrame to leverage the graphing functions in the matplotlib library. To answer my original question of how the different user bases would agree or disagree over their Top 1000 movies I generated basic scatter plots of one type of rating vs another, iterating through all three combinations. The most surprising thing that I discovered was how varying the range of the scores were. When converted to a 10 point scale the critics (metascore) score ranged from around 6 to 10 while the IMDb user score only went from 8 to 10. Clearly the critics disagree on the IMDb user's picks for best movies. The Letterboxd users also seemed to disagree as their scores ranged form around 7 to 10 when compared on a 10 point scale. The other interesting thing was that even though the sample size was 1000 for both sites the final count of movies was 1139 films. Meaning that both user bases had an almost 90% overlap for their pick of best 1000 films. Clearly the ratings were most likely jumbled around between the two but its interesting they agreed this much to begin with. Finally, rather humorously, there were two films in which the Letterboxd users rated extremly low (around 2.7) that nevertheless ranked highly for the IMDb users. These two films were D.R. (2012), which garned a rating 0f 8.4 / 10 from IMDb and 9.7 / 10 from critics but only 5.4 / 10 from Letterboxd, and La (2019) which had a rating of 8.2 / 10 from IMDb with 9.0 / 10 from critics coupled with 5.6 / 10 from Letterboxd. Its anyones guess on the specific reason's behind the discrepancy but a more careful examination of the data scrapped from Letterboxd shows a very low number of reviews for these two films. So its mostly likely just a factor of the Letterboxd audience not enjoying this specific type of film. 
+
+
+Here are the ratings of Letterboxd and the ratings of IMDb compared
+![LetterboxdvsIMDb](LetterboxdvsIMDb.png)
+
+
+Here are the ratings of Letterboxd and the metascore (critics ratings) compared.
+![LetterboxdvsMeta](LetterboxdvsMeta.png)
+
+And finally here are the metascores vs the IMDb user ratings. 
+![MetascoresvsIMDb](MetascoresvsIMDb.png)
+
+
+
+
