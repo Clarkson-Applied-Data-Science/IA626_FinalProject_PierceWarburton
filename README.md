@@ -66,10 +66,11 @@ Here are the ratings of Letterboxd and the ratings of IMDb compared
 
 
 Here are the ratings of Letterboxd and the metascore (critics ratings) compared.
-![LetterboxdvsMeta](LetterboxdvsMeta.png)
+![LetterboxdvsMeta](LetterboxdvsMetascore.png)
 
 And finally here are the metascores vs the IMDb user ratings. 
-![MetascoresvsIMDb](MetascoresvsIMDb.png)
+![MetascoresvsIMDb](MetascorevsIMDb.png)
+
 
 
 
